@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Home</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet"/>
+</head>
+<body>
+	<div class="container">
+
+      <form class="form-signin" >
+	<!-- <input type="password" id="pass"></input> -->
+	<br>
+	<br>
+	<button class="btn btn-primary" onclick="Garage();"><i class="fa fa-home fa-5x" aria-hidden="true"></i></button>
+	<button class="btn btn-primary pull-right"><i class="fa fa-lightbulb-o fa-5x" aria-hidden="true"></i></button>
+</form>
+</div>
+</body>
+<script>
+var token = localStorage.getItem('token');
+function Garage() {
+	$.ajax({
+		beforeSend: function(req){
+			req.setRequestHeader('x-access-token', token)
+		},
+		url: "/api/garage",
+		method:"POST",
+		// data: {
+  //                   // id: type,
+  //                   pass: $('#pass').val()
+  //               }
+	});
+}
+</script>
+</html>
