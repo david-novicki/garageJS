@@ -1,5 +1,5 @@
 {
-  "name": "node-token-jwt",
+  "name": "garage-js",
   "main": "server.js",
   "dependencies": {
     "body-parser": "^1.15.1",
@@ -8,5 +8,28 @@
     "mongoose": "^4.4.17",
     "morgan": "^1.7.0",
     "twilio": "^2.9.1"
-  }
+  },
+  "description": "Login and Control panel built with HTML, vanilla Javascript, and a NodeJS API using ExpressJS.",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/supercycle91/garageJS.git"
+  },
+  "keywords": [
+    "ioT",
+    "NodeJS",
+    "python",
+    "Javascript",
+    "ExpressJS"
+  ],
+  "author": "David Novicki <supercycle91@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/supercycle91/garageJS/issues"
+  },
+  "homepage": "https://github.com/supercycle91/garageJS#readme"
 }
