@@ -20,5 +20,5 @@ The relays are connected to garage door/relay switch and a light switch if you w
  TWILIO_SID = Twilio SID
 
  ## CLIENT
- There are only two pages: Login and Home. Login page logs the user in while the Home page is the control panel.
+ There are only two pages: Login(/login) and Home(/home). Login page logs the user in while the Home page is the control panel.
 
