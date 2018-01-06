@@ -6,7 +6,7 @@ Handles authentication using JWT and python script to control relays.
 
 The relays are connected to garage door/relay switch and a light switch if you wish.
 
- ### Environment Variables
+ ### Environment Variables(Required)
  TO_NUMBER = Phone number to text when opened
 
  FROM_NUMBER = Phone number from when sending text message
